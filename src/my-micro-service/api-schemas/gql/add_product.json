@@ -1,0 +1,53 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "product": {
+                "description": "product head",
+                "type": "string"
+            },
+            "brand": {
+                "description": "Brand name",
+                "type": "string"
+            },
+            "model": {
+                "description": "Model Number",
+                "type": "string"
+            },
+            "shape": {
+                "description": "shape of the product",
+                "type": "string"
+            },
+            "color": {
+                "description": "color",
+                "type": "string"
+            },
+            "body_color": {
+                "description": "body_color",
+                "type": "string"
+            },
+            "size": {
+                "description": "XXXX",
+                "type": "string"
+            }
+        },
+        "required": [],
+        "description": "The add_product api creates a new product."
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "description": "success status of api",
+                "type": "boolean"
+            },
+            "_id": {
+                "description": "_id of the product",
+                "type": "string"
+            }
+        },
+        "required": [
+            "success"
+        ]
+    }
+}

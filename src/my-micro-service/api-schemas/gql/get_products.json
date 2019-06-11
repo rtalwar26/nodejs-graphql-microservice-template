@@ -1,0 +1,78 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "product": {
+                "description": "product name",
+                "type": "string"
+            },
+            "brand": {
+                "description": "Brand name",
+                "type": "string"
+            },
+            "model": {
+                "description": "Model Number",
+                "type": "string"
+            },
+            "shape": {
+                "description": "square/round",
+                "type": "string"
+            },
+            "color": {
+                "description": "color",
+                "type": "string"
+            },
+            "body_color": {
+                "description": "body_color",
+                "type": "string"
+            },
+            "size": {
+                "description": "size",
+                "type": "string"
+            }
+        },
+        "required": [],
+        "description": "The get_products api searches product"
+    },
+    "response": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "product": {
+                    "description": "product name",
+                    "type": "string"
+                },
+                "brand": {
+                    "description": "Brand name",
+                    "type": "string"
+                },
+                "model": {
+                    "description": "Model Number",
+                    "type": "string"
+                },
+                "shape": {
+                    "description": "square/round",
+                    "type": "string"
+                },
+                "color": {
+                    "description": "color",
+                    "type": "string"
+                },
+                "body_color": {
+                    "description": "body_color",
+                    "type": "string"
+                },
+                "size": {
+                    "description": "size",
+                    "type": "string"
+                },
+                "_id": {
+                    "description": "_id of the product",
+                    "type": "string"
+                }
+            }
+        },
+        "required": []
+    }
+}

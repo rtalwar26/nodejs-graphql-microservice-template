@@ -1,0 +1,19 @@
+{
+    "dependencies": [
+        {
+            "name": "health",
+            "path": "./gql/health_API.json",
+            "type": "Query"
+        },
+        {
+            "name": "get_products",
+            "path": "./gql/get_products.json",
+            "type": "Query"
+        },
+        {
+            "name": "add_product",
+            "path": "./gql/add_product.json",
+            "type": "Mutation"
+        }
+    ]
+}
