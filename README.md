@@ -41,6 +41,7 @@ import { MAPP as MICROSERVICE1 } from "my-micro-service";
 ## Start the server
 
 ```shell
+npm install
 npm start
 ```
 
