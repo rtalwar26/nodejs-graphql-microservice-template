@@ -10,7 +10,7 @@ class MAPPGQL {
         return { status: "ok" };
     }
     async add_product(args, req) {
-        await this.assert_nonempty(args, 'product,model,brand,shape,size,color,wattage,body_color'.split(','));
+        await this.assert_nonempty(args, 'product,model,brand,shape,size,color,body_color'.split(','));
         let obj = await Product_1.default.updateOne(args, { $set: Object.assign({}, args) }, { upsert: true }).exec();
         obj = await Product_1.default.findOne(args).lean().exec();
         return Object.assign({ success: true }, obj);
