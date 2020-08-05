@@ -38,7 +38,7 @@ class DBConnection {
     static async connectToPath(url) {
         let options = AppConfigUtil_1.default.get("db:auth") ? (await DBConnection.connectionOptions()) : {};
         return new Promise((resolve, reject) => {
-            mongoose.connect(url, Object.assign({}, options, { useNewUrlParser: true })).then(resolve, reject);
+            mongoose.connect(url, Object.assign(Object.assign({}, options), { useNewUrlParser: true })).then(resolve, reject);
         });
     }
     static async connectionOptions() {

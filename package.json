@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/services/app.js"
+    "start": "npx tsc && node src/services/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +30,7 @@
     "@types/mongoose": "^5.3.19",
     "@types/node": "^11.10.4",
     "intern": "^4.4.2",
-    "systemjs": "^0.21.3"
+    "systemjs": "^0.21.3",
+    "typescript": "3.6.3"
   }
 }

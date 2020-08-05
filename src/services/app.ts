@@ -7,7 +7,7 @@ import * as http from "http"
 import { MAPP as MICROSERVICE1 } from "my-micro-service";
 
 
-DBConnection.connect(AppConfigUtil.get(`db:name`)).then(async () => {
+DBConnection.connect(AppConfigUtil.get(`db:name`)).finally(async () => {
     let app = express();
     let h = new http.Server(app);
     app.set('trust proxy', true);

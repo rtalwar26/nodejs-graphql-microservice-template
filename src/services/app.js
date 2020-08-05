@@ -6,7 +6,7 @@ const express = require("express");
 const MSAppInit_1 = require("./MSAppInit");
 const http = require("http");
 const my_micro_service_1 = require("my-micro-service");
-DBConnection_1.default.connect(AppConfigUtil_1.default.get(`db:name`)).then(async () => {
+DBConnection_1.default.connect(AppConfigUtil_1.default.get(`db:name`)).finally(async () => {
     let app = express();
     let h = new http.Server(app);
     app.set('trust proxy', true);

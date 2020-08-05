@@ -30,6 +30,6 @@ let mySchema = new Schema({
 });
 
 
-export interface IProductModel extends IProduct, mongoose.Document { }
+export interface IProductModel extends mongoose.Document { }
 
 export default mongoose.model<IProductModel>('products', mySchema);
