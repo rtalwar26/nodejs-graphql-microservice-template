@@ -16,6 +16,7 @@ let mySchema = new Schema({
     body_color: { type: String },
     data: {
         type: mongoose.SchemaTypes.Mixed
-    }
+    },
+    amount: { type: mongoose.SchemaTypes.Number }
 });
 exports.default = mongoose.model('products', mySchema);

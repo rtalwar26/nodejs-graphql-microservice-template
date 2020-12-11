@@ -4,7 +4,7 @@ import * as GraphHTTP from 'express-graphql';
 import * as graphql from 'graphql';
 import MAPPGQL from './MAPPGQL';
 
-import { schemaConfigBuilder, schema_builder } from '@cuterajat26/graphql-json-schema';
+import { schemaConfigBuilder, schema_builder } from './SchemaBuilder';
 
 const config_path = './api-schemas/config.json';
 const schemaConfig = schemaConfigBuilder(require.resolve(config_path));

@@ -6,6 +6,10 @@
                 "description": "product name",
                 "type": "string"
             },
+            "amount": {
+                "description": "product amount",
+                "type": "float"
+            },
             "brand": {
                 "description": "Brand name",
                 "type": "string"
@@ -39,6 +43,10 @@
         "items": {
             "type": "object",
             "properties": {
+                "amount": {
+                    "description": "product amount",
+                    "type": "float"
+                },
                 "product": {
                     "description": "product name",
                     "type": "string"

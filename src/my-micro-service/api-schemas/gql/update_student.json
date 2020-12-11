@@ -1,0 +1,36 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "description": "student name",
+                "type": "string"
+            },
+            "age": {
+                "description": "student age",
+                "type": "integer"
+            },
+            "attendance": {
+                "description": "attendance",
+                "type": "boolean"
+            }
+        },
+        "description": "Update student api"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "description": "success status of api",
+                "type": "boolean"
+            },
+            "_id": {
+                "description": "_id of the product",
+                "type": "string"
+            }
+        },
+        "required": [
+            "success"
+        ]
+    }
+}

@@ -1,6 +1,7 @@
 {
   "urls": {},
   "cors_domains": [
-    "localhost"
+    "localhost",
+    "localhost:8080"
   ]
 }

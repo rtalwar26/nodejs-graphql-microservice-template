@@ -23,7 +23,8 @@
     "my-micro-service": "file:src/my-micro-service",
     "mongoose": "^5.4.15",
     "nconf": "^0.10.0",
-    "node-vault-config": "0.0.2"
+    "node-vault-config": "0.0.2",
+    "@cuterajat26/my-first-npm-module": "^1.0.1"
   },
   "devDependencies": {
     "@types/graphql": "^14.2.0",

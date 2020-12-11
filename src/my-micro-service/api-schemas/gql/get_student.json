@@ -1,0 +1,40 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "description": "Name of the student",
+                "type": "string"
+            },
+            "age": {
+                "description": "Age of the student",
+                "type": "integer"
+            },
+            "attendance": {
+                "description": "attendance of the student today ",
+                "type": "boolean"
+            }
+        },
+        "description": "Student Details"
+    },
+    "response": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Name of the student",
+                    "type": "string"
+                },
+                "age": {
+                    "description": "Age of the student",
+                    "type": "integer"
+                },
+                "attendance": {
+                    "description": "attendance of the student today ",
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}

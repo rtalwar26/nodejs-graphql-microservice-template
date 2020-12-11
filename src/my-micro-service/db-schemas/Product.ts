@@ -12,6 +12,7 @@ export interface IProduct {
     body_color: string
     size: string
     data?: any
+    amount: number
 
 
 };
@@ -26,7 +27,8 @@ let mySchema = new Schema({
     body_color: { type: String },
     data: {
         type: mongoose.SchemaTypes.Mixed
-    }
+    },
+    amount: { type: mongoose.SchemaTypes.Number }
 });
 
 

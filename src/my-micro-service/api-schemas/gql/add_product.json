@@ -2,6 +2,10 @@
     "request": {
         "type": "object",
         "properties": {
+            "amount": {
+                "description": "product amount",
+                "type": "float"
+            },
             "product": {
                 "description": "product head",
                 "type": "string"
@@ -37,6 +41,7 @@
     "response": {
         "type": "object",
         "properties": {
+            
             "success": {
                 "description": "success status of api",
                 "type": "boolean"

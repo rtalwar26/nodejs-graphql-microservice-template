@@ -6,6 +6,21 @@
             "type": "Query"
         },
         {
+            "name": "test_mongo_queries",
+            "path": "./gql/test_mongo_queries.json",
+            "type": "Query"
+        },
+        {
+            "name": "get_student",
+            "path": "./gql/get_student.json",
+            "type": "Query"
+        },
+        {
+            "name": "update_student",
+            "path": "./gql/update_student.json",
+            "type": "Mutation"
+        },
+        {
             "name": "get_products",
             "path": "./gql/get_products.json",
             "type": "Query"
